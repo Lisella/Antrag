@@ -1,3 +1,5 @@
 org/example/IncomingAntrag.class
-org/example/CamundaBpmProcessApplication.class
 org/example/LoggerDelegate.class
+org/example/CamundaBpmProcessApplication.class
+org/example/CheckAntrag.class
+org/example/Customer.class

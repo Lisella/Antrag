@@ -59,13 +59,13 @@ public class CheckAntrag implements JavaDelegate {
                 SpinJsonNode json = JSON(inline);
                 SpinJsonNode customerProperty = json.prop("customers");
                 SpinList customers = customerProperty.elements();
+                String customerName = customerProperty.stringValue();
 
-                //SpinJsonNode customer = customers.get(0);
-                //String customerName = customer.stringValue();
+                delegateExecution.setVariable("customer", customerName );
 
-                for (int i = 0; i < customers.size(); i++) {
-                    if(customers.get(i))
-                }
+                /*for (int i = 0; i < customers.size(); i++) {
+                    if(customers.get(i) == )
+                }*/
 
                /* for (int i = 0; i < 5; i++) {
                     System.out.println(i);

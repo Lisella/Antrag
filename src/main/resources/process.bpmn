@@ -6,7 +6,7 @@
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="SequenceFlow1" sourceRef="StartEventProcessStarted" targetRef="Activity_05s5a0r" />
     <bpmn:sequenceFlow id="Flow_0z28km4" sourceRef="Activity_05s5a0r" targetRef="EndEventProcessEnded" />
-    <bpmn:serviceTask id="Activity_05s5a0r" camunda:class="org.example.IncomingAntrag">
+    <bpmn:serviceTask id="Activity_05s5a0r" camunda:class="org.example.CheckAntrag">
       <bpmn:incoming>SequenceFlow1</bpmn:incoming>
       <bpmn:outgoing>Flow_0z28km4</bpmn:outgoing>
     </bpmn:serviceTask>
